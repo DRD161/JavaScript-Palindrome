@@ -1,7 +1,7 @@
 function palindrome(str) {
-    /* Replace non-alphanumeric characters as well as make them lowercase.*/
+    //Replace non-alphanumeric characters as well as make them lowercase.
     var Regex = str.replace(/[\W_]/gi, '').toLowerCase(); 
-    /* \W replaces the non-alphanumeric characters. g(is for global replacement) i(ignores case sensitivity) */
+    // \W replaces the non-alphanumeric characters. g(is for global replacement) i(ignores case sensitivity) 
     
     /* Take the string(str)  passed to the Regex variable, split it, reverse it, then join it together.
        This algorithm splits the string to put it into an array so it cna be reversed */
@@ -12,7 +12,7 @@ function palindrome(str) {
     if (revString === Regex) {
         return true;
         
-    /* If the passed in string is NOT a palindrome, return false */
+    // If the passed in string is NOT a palindrome, return false 
     } else {
 
         return false;
